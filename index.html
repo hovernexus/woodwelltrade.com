@@ -8,9 +8,14 @@
     <!-- SEO Meta Tags -->
     <base href="/">
 <style>
-  /* 强制修复 LOGO 大小：针对 Tailwind 类名进行覆盖 */
-  .img-12w {
+  /* 强制修复 LOGO 大小：针对 LOGO 图像的 alt 属性进行覆盖 */
+  img[alt="WOOD WELL LIMITED"] {
     max-width: 150px !important; /* 设定一个合理的宽度 */
+    height: auto !important;
+  }
+  /* 确保父级容器不会导致溢出 */
+  .img-12w {
+    max-width: 150px !important;
     height: auto !important;
   }
 </style>
